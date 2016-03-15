@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F2E82601C91E618001B9480 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E825F1C91E618001B9480 /* AppDelegate.swift */; };
+		1F2E82661C91E618001B9480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E82651C91E618001B9480 /* Assets.xcassets */; };
+		1F2E82691C91E618001B9480 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E82671C91E618001B9480 /* MainMenu.xib */; };
+		1F2E82721C91E68D001B9480 /* LeafSimulationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E82711C91E68D001B9480 /* LeafSimulationScene.swift */; };
+		1F2E82741C91E6FF001B9480 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E82731C91E6FF001B9480 /* Media.xcassets */; };
+		1F2E82761C91E71A001B9480 /* LeafSimulationScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E82751C91E71A001B9480 /* LeafSimulationScene.sks */; };
+		1F2E82831C91F80C001B9480 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E82821C91F80C001B9480 /* AppDelegate.swift */; };
+		1F2E82891C91F80C001B9480 /* iOSLeafSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E82881C91F80C001B9480 /* iOSLeafSimulationViewController.swift */; };
+		1F2E828C1C91F80C001B9480 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E828A1C91F80C001B9480 /* Main.storyboard */; };
+		1F2E828E1C91F80C001B9480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E828D1C91F80C001B9480 /* Assets.xcassets */; };
+		1F2E82911C91F80C001B9480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E828F1C91F80C001B9480 /* LaunchScreen.storyboard */; };
+		1F2E829D1C91F834001B9480 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E829C1C91F834001B9480 /* AppDelegate.swift */; };
+		1F2E82A31C91F834001B9480 /* tvOSLeafSimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E82A21C91F834001B9480 /* tvOSLeafSimulationViewController.swift */; };
+		1F2E82A81C91F834001B9480 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E82A61C91F834001B9480 /* Main.storyboard */; };
+		1F2E82AA1C91F834001B9480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E82A91C91F834001B9480 /* Assets.xcassets */; };
+		1F2E82B11C91F845001B9480 /* LeafSimulationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E82711C91E68D001B9480 /* LeafSimulationScene.swift */; };
+		1F2E82B21C91F846001B9480 /* LeafSimulationScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E82711C91E68D001B9480 /* LeafSimulationScene.swift */; };
+		1F2E82B31C91F849001B9480 /* LeafSimulationScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E82751C91E71A001B9480 /* LeafSimulationScene.sks */; };
+		1F2E82B41C91F84A001B9480 /* LeafSimulationScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E82751C91E71A001B9480 /* LeafSimulationScene.sks */; };
+		1F2E82B51C91F84D001B9480 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E82731C91E6FF001B9480 /* Media.xcassets */; };
+		1F2E82B61C91F84E001B9480 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2E82731C91E6FF001B9480 /* Media.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F2E825C1C91E618001B9480 /* OSXSpriteKitLeafSimulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSXSpriteKitLeafSimulation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F2E825F1C91E618001B9480 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F2E82651C91E618001B9480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F2E82681C91E618001B9480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1F2E826A1C91E618001B9480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F2E82711C91E68D001B9480 /* LeafSimulationScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeafSimulationScene.swift; sourceTree = "<group>"; };
+		1F2E82731C91E6FF001B9480 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		1F2E82751C91E71A001B9480 /* LeafSimulationScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LeafSimulationScene.sks; sourceTree = "<group>"; };
+		1F2E82801C91F80C001B9480 /* iOSSpriteKitLeafSimulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSpriteKitLeafSimulation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F2E82821C91F80C001B9480 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F2E82881C91F80C001B9480 /* iOSLeafSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSLeafSimulationViewController.swift; sourceTree = "<group>"; };
+		1F2E828B1C91F80C001B9480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F2E828D1C91F80C001B9480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F2E82901C91F80C001B9480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F2E82921C91F80C001B9480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F2E829A1C91F834001B9480 /* tvOSSpriteKitLeafSimulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tvOSSpriteKitLeafSimulation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F2E829C1C91F834001B9480 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F2E82A21C91F834001B9480 /* tvOSLeafSimulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tvOSLeafSimulationViewController.swift; sourceTree = "<group>"; };
+		1F2E82A71C91F834001B9480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F2E82A91C91F834001B9480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F2E82AB1C91F834001B9480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F2E82591C91E618001B9480 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2E827D1C91F80C001B9480 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2E82971C91F834001B9480 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F2E82531C91E618001B9480 = {
+			isa = PBXGroup;
+			children = (
+				1F2E82701C91E65B001B9480 /* Common */,
+				1F2E82811C91F80C001B9480 /* iOSSpriteKitLeafSimulation */,
+				1F2E829B1C91F834001B9480 /* tvOSSpriteKitLeafSimulation */,
+				1F2E825E1C91E618001B9480 /* OSXSpriteKitLeafSimulation */,
+				1F2E825D1C91E618001B9480 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F2E825D1C91E618001B9480 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F2E825C1C91E618001B9480 /* OSXSpriteKitLeafSimulation.app */,
+				1F2E82801C91F80C001B9480 /* iOSSpriteKitLeafSimulation.app */,
+				1F2E829A1C91F834001B9480 /* tvOSSpriteKitLeafSimulation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F2E825E1C91E618001B9480 /* OSXSpriteKitLeafSimulation */ = {
+			isa = PBXGroup;
+			children = (
+				1F2E825F1C91E618001B9480 /* AppDelegate.swift */,
+				1F2E82771C91E80D001B9480 /* Supporting Files */,
+			);
+			path = OSXSpriteKitLeafSimulation;
+			sourceTree = "<group>";
+		};
+		1F2E82701C91E65B001B9480 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1F2E82711C91E68D001B9480 /* LeafSimulationScene.swift */,
+				1F2E82751C91E71A001B9480 /* LeafSimulationScene.sks */,
+				1F2E82731C91E6FF001B9480 /* Media.xcassets */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1F2E82771C91E80D001B9480 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F2E82651C91E618001B9480 /* Assets.xcassets */,
+				1F2E82671C91E618001B9480 /* MainMenu.xib */,
+				1F2E826A1C91E618001B9480 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F2E82811C91F80C001B9480 /* iOSSpriteKitLeafSimulation */ = {
+			isa = PBXGroup;
+			children = (
+				1F2E82881C91F80C001B9480 /* iOSLeafSimulationViewController.swift */,
+				1F2E82B71C91F8C4001B9480 /* Supporting Files */,
+			);
+			path = iOSSpriteKitLeafSimulation;
+			sourceTree = "<group>";
+		};
+		1F2E829B1C91F834001B9480 /* tvOSSpriteKitLeafSimulation */ = {
+			isa = PBXGroup;
+			children = (
+				1F2E82A21C91F834001B9480 /* tvOSLeafSimulationViewController.swift */,
+				1F2E82B81C91F97F001B9480 /* Supporting Files */,
+			);
+			path = tvOSSpriteKitLeafSimulation;
+			sourceTree = "<group>";
+		};
+		1F2E82B71C91F8C4001B9480 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F2E82821C91F80C001B9480 /* AppDelegate.swift */,
+				1F2E828A1C91F80C001B9480 /* Main.storyboard */,
+				1F2E828D1C91F80C001B9480 /* Assets.xcassets */,
+				1F2E828F1C91F80C001B9480 /* LaunchScreen.storyboard */,
+				1F2E82921C91F80C001B9480 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F2E82B81C91F97F001B9480 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F2E829C1C91F834001B9480 /* AppDelegate.swift */,
+				1F2E82A61C91F834001B9480 /* Main.storyboard */,
+				1F2E82A91C91F834001B9480 /* Assets.xcassets */,
+				1F2E82AB1C91F834001B9480 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F2E825B1C91E618001B9480 /* OSXSpriteKitLeafSimulation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F2E826D1C91E618001B9480 /* Build configuration list for PBXNativeTarget "OSXSpriteKitLeafSimulation" */;
+			buildPhases = (
+				1F2E82581C91E618001B9480 /* Sources */,
+				1F2E82591C91E618001B9480 /* Frameworks */,
+				1F2E825A1C91E618001B9480 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OSXSpriteKitLeafSimulation;
+			productName = SpriteKitLeafSimulation;
+			productReference = 1F2E825C1C91E618001B9480 /* OSXSpriteKitLeafSimulation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F2E827F1C91F80C001B9480 /* iOSSpriteKitLeafSimulation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F2E82931C91F80C001B9480 /* Build configuration list for PBXNativeTarget "iOSSpriteKitLeafSimulation" */;
+			buildPhases = (
+				1F2E827C1C91F80C001B9480 /* Sources */,
+				1F2E827D1C91F80C001B9480 /* Frameworks */,
+				1F2E827E1C91F80C001B9480 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSSpriteKitLeafSimulation;
+			productName = iOSSpriteKitLeafSimulation;
+			productReference = 1F2E82801C91F80C001B9480 /* iOSSpriteKitLeafSimulation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F2E82991C91F834001B9480 /* tvOSSpriteKitLeafSimulation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F2E82AC1C91F834001B9480 /* Build configuration list for PBXNativeTarget "tvOSSpriteKitLeafSimulation" */;
+			buildPhases = (
+				1F2E82961C91F834001B9480 /* Sources */,
+				1F2E82971C91F834001B9480 /* Frameworks */,
+				1F2E82981C91F834001B9480 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tvOSSpriteKitLeafSimulation;
+			productName = tvOSSpriteKitLeafSimulation;
+			productReference = 1F2E829A1C91F834001B9480 /* tvOSSpriteKitLeafSimulation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F2E82541C91E618001B9480 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Jeffrey Morgan";
+				TargetAttributes = {
+					1F2E825B1C91E618001B9480 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					1F2E827F1C91F80C001B9480 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					1F2E82991C91F834001B9480 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 1F2E82571C91E618001B9480 /* Build configuration list for PBXProject "SpriteKitLeafSimulation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F2E82531C91E618001B9480;
+			productRefGroup = 1F2E825D1C91E618001B9480 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F2E827F1C91F80C001B9480 /* iOSSpriteKitLeafSimulation */,
+				1F2E82991C91F834001B9480 /* tvOSSpriteKitLeafSimulation */,
+				1F2E825B1C91E618001B9480 /* OSXSpriteKitLeafSimulation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F2E825A1C91E618001B9480 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2E82661C91E618001B9480 /* Assets.xcassets in Resources */,
+				1F2E82761C91E71A001B9480 /* LeafSimulationScene.sks in Resources */,
+				1F2E82741C91E6FF001B9480 /* Media.xcassets in Resources */,
+				1F2E82691C91E618001B9480 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2E827E1C91F80C001B9480 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2E82B31C91F849001B9480 /* LeafSimulationScene.sks in Resources */,
+				1F2E82911C91F80C001B9480 /* LaunchScreen.storyboard in Resources */,
+				1F2E828E1C91F80C001B9480 /* Assets.xcassets in Resources */,
+				1F2E82B51C91F84D001B9480 /* Media.xcassets in Resources */,
+				1F2E828C1C91F80C001B9480 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2E82981C91F834001B9480 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2E82A81C91F834001B9480 /* Main.storyboard in Resources */,
+				1F2E82B41C91F84A001B9480 /* LeafSimulationScene.sks in Resources */,
+				1F2E82AA1C91F834001B9480 /* Assets.xcassets in Resources */,
+				1F2E82B61C91F84E001B9480 /* Media.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F2E82581C91E618001B9480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2E82721C91E68D001B9480 /* LeafSimulationScene.swift in Sources */,
+				1F2E82601C91E618001B9480 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2E827C1C91F80C001B9480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2E82891C91F80C001B9480 /* iOSLeafSimulationViewController.swift in Sources */,
+				1F2E82831C91F80C001B9480 /* AppDelegate.swift in Sources */,
+				1F2E82B11C91F845001B9480 /* LeafSimulationScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F2E82961C91F834001B9480 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2E82A31C91F834001B9480 /* tvOSLeafSimulationViewController.swift in Sources */,
+				1F2E829D1C91F834001B9480 /* AppDelegate.swift in Sources */,
+				1F2E82B21C91F846001B9480 /* LeafSimulationScene.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1F2E82671C91E618001B9480 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F2E82681C91E618001B9480 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1F2E828A1C91F80C001B9480 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F2E828B1C91F80C001B9480 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F2E828F1C91F80C001B9480 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F2E82901C91F80C001B9480 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1F2E82A61C91F834001B9480 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F2E82A71C91F834001B9480 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F2E826B1C91E618001B9480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F2E826C1C91E618001B9480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1F2E826E1C91E618001B9480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXSpriteKitLeafSimulation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SpriteKitLeafSimulation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F2E826F1C91E618001B9480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = OSXSpriteKitLeafSimulation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SpriteKitLeafSimulation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1F2E82941C91F80C001B9480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = iOSSpriteKitLeafSimulation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SpriteKitLeafSimulation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F2E82951C91F80C001B9480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = iOSSpriteKitLeafSimulation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SpriteKitLeafSimulation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F2E82AD1C91F834001B9480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = tvOSSpriteKitLeafSimulation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SpriteKitLeafSimulation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		1F2E82AE1C91F834001B9480 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = tvOSSpriteKitLeafSimulation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SpriteKitLeafSimulation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F2E82571C91E618001B9480 /* Build configuration list for PBXProject "SpriteKitLeafSimulation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2E826B1C91E618001B9480 /* Debug */,
+				1F2E826C1C91E618001B9480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F2E826D1C91E618001B9480 /* Build configuration list for PBXNativeTarget "OSXSpriteKitLeafSimulation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2E826E1C91E618001B9480 /* Debug */,
+				1F2E826F1C91E618001B9480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F2E82931C91F80C001B9480 /* Build configuration list for PBXNativeTarget "iOSSpriteKitLeafSimulation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2E82941C91F80C001B9480 /* Debug */,
+				1F2E82951C91F80C001B9480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F2E82AC1C91F834001B9480 /* Build configuration list for PBXNativeTarget "tvOSSpriteKitLeafSimulation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F2E82AD1C91F834001B9480 /* Debug */,
+				1F2E82AE1C91F834001B9480 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F2E82541C91E618001B9480 /* Project object */;
+}
