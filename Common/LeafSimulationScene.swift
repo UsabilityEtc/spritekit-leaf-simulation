@@ -92,7 +92,6 @@ class LeafSimulationScene: SKScene {
   }
 
   private func coinTossIsHeads() -> Bool {
-    print(randomInt(1))
     return randomInt(1) == 0
   }
   
