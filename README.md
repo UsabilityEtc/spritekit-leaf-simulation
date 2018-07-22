@@ -1,6 +1,6 @@
 # SpriteKit Leaf Simulation
 
-This Xcode project provides a Swift implementation of a leaf simulation using [SpriteKit](https://developer.apple.com/spritekit/). The project includes targets for running the simulation on Mac OS X, iOS and tvOS.
+This Xcode project provides a Swift implementation of a leaf simulation using [SpriteKit](https://developer.apple.com/spritekit/). The project includes targets for running the simulation on macOS, iOS and tvOS.
 
 Watch the [SpriteKit Leaf Simulation](https://www.youtube.com/watch?v=NS8s_OQMLFI) video on YouTube.
 
