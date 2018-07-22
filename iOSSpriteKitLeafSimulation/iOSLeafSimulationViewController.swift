@@ -3,7 +3,7 @@
 //  iOSSpriteKitLeafSimulation
 //
 //  Created by Jeffrey Morgan on 10/03/2016.
-//  Copyright © 2016 Jeffrey Morgan under the MIT License.
+//  Copyright © 2018 Jeffrey Morgan under the MIT License.
 //
 
 import UIKit
@@ -17,38 +17,30 @@ class iOSLeafSimulationViewController: UIViewController {
   }
   
   private func configureScene() {
-    if let scene = LeafSimulationScene(fileNamed:"LeafSimulationScene") {
-      // Configure the view.
-      let skView = self.view as! SKView
-      skView.showsFPS = true
-      skView.showsNodeCount = true
-      
-      /* Sprite Kit applies additional optimizations to improve rendering performance */
-      skView.ignoresSiblingOrder = true
-      
-      /* Set the scale mode to scale to fit the window */
-      scene.scaleMode = .AspectFill
-      
-      // Make the scene the same size as the scene's SKView
-      scene.size = skView.bounds.size
-      
-      skView.presentScene(scene)
-    }
+    guard let skView = self.view as? SKView,
+          let scene = LeafSimulationScene(fileNamed: "LeafSimulationScene") else { return }
+    scene.scaleMode = .aspectFill
+    scene.size = skView.bounds.size
+    
+    skView.ignoresSiblingOrder = true
+    skView.showsFPS = true
+    skView.showsNodeCount = true
+    skView.presentScene(scene)
   }
   
-  override func shouldAutorotate() -> Bool {
+  override var shouldAutorotate: Bool {
     return true
   }
   
-  override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-    if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-      return .AllButUpsideDown
+  override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+    if UIDevice.current.userInterfaceIdiom == .phone {
+      return .allButUpsideDown
     } else {
-      return .All
+      return .all
     }
   }
   
-  override func prefersStatusBarHidden() -> Bool {
+  override var prefersStatusBarHidden: Bool {
     return true
   }
   

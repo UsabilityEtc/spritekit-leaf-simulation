@@ -3,19 +3,19 @@
 //  SpriteKitLeafSimulation
 //
 //  Created by Jeffrey Morgan on 10/03/2016.
-//  Copyright © 2016 Jeffrey Morgan under the MIT License.
+//  Copyright © 2018 Jeffrey Morgan under the MIT License.
 //
 
 import SpriteKit
 
 enum WindDirection: CGFloat {
-  case Easterly = -1.0
-  case Westerly =  1.0
+  case easterly = -1.0
+  case westerly =  1.0
 }
 
 struct CollisionCategory {
-  static let WorldEdge = UInt32(1)
-  static let Leaf      = UInt32(2)
+  static let worldEdge = UInt32(1)
+  static let leaf      = UInt32(2)
 }
 
 class LeafSimulationScene: SKScene {
@@ -24,7 +24,7 @@ class LeafSimulationScene: SKScene {
   private let numberOfLeaves = 100
   private let delayBetweenLeaves = 0.5
 
-  override func didMoveToView(view: SKView) {
+  override func didMove(to view: SKView) {
     createRockLeafAction()
     addWorldEdges()
     addLeaves()
@@ -32,35 +32,35 @@ class LeafSimulationScene: SKScene {
   
   /** Rotate each leaf from -45 degrees to 45 degrees to rock it back and forth on its way down */
   private func createRockLeafAction() {
-    let rotateClockwiseAction = SKAction.rotateByAngle(CGFloat(M_PI_4 / 2), duration: 1)
-    let rotateCounterClockwiseAction = rotateClockwiseAction.reversedAction()
+    let rotateClockwiseAction = SKAction.rotate(byAngle: .pi / CGFloat(2), duration: 1)
+    let rotateCounterClockwiseAction = rotateClockwiseAction.reversed()
     let fullRockAction = SKAction.sequence([rotateClockwiseAction, rotateCounterClockwiseAction, rotateCounterClockwiseAction, rotateClockwiseAction])
-    rockLeafAction = SKAction.repeatActionForever(fullRockAction)
+    rockLeafAction = SKAction.repeatForever(fullRockAction)
   }
   
   private func addWorldEdges() {
-    physicsBody = SKPhysicsBody(edgeLoopFromRect: frame)
-    physicsBody?.categoryBitMask = CollisionCategory.WorldEdge
+    physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
+    physicsBody?.categoryBitMask = CollisionCategory.worldEdge
   }
   
   private func addLeaves() {
-    let spawnLeafAction = SKAction.runBlock {
+    let spawnLeafAction = SKAction.run {
       self.spawnLeaf()
     }
-    let waitAction = SKAction.waitForDuration(delayBetweenLeaves)
+    let waitAction = SKAction.wait(forDuration: delayBetweenLeaves)
     let addLeafAction = SKAction.sequence([spawnLeafAction, waitAction])
-    runAction(SKAction.repeatAction(addLeafAction, count: numberOfLeaves))
+    run(SKAction.repeat(addLeafAction, count: numberOfLeaves))
   }
   
   private func spawnLeaf() {
     let leaf = createLeafNode()
-    leaf.zRotation = CGFloat(M_PI_2) // Rotate the leaf by 90 degrees to make it horizont
+    leaf.zRotation = .pi / CGFloat(2) // Rotate the leaf by 90 degrees to make it horizontal
     leaf.position = CGPoint(x: randomX(), y: size.height - leaf.size.height)
-    leaf.physicsBody = SKPhysicsBody(polygonFromPath: leafPhysicsBodyPath(leaf))
-    leaf.physicsBody?.categoryBitMask = CollisionCategory.Leaf
-    leaf.physicsBody?.collisionBitMask = CollisionCategory.WorldEdge
+    leaf.physicsBody = SKPhysicsBody(polygonFrom: leafPhysicsBodyPath(leafNode: leaf))
+    leaf.physicsBody?.categoryBitMask = CollisionCategory.leaf
+    leaf.physicsBody?.collisionBitMask = CollisionCategory.worldEdge
     leaf.physicsBody?.restitution = 0.05
-    leaf.runAction(rockLeafAction)
+    leaf.run(rockLeafAction)
     addChild(leaf)
   }
   
@@ -92,7 +92,7 @@ class LeafSimulationScene: SKScene {
   }
 
   private func coinTossIsHeads() -> Bool {
-    return randomInt(1) == 0
+    return randomInt(n: 1) == 0
   }
   
   /** Return a random Int between 0 and n */
@@ -110,17 +110,17 @@ class LeafSimulationScene: SKScene {
   }
 
   /** A diamond path works well as the physics body for each leaf */
-  private func leafPhysicsBodyPath(leafNode: SKSpriteNode) -> CGPathRef {
-    let diamondPath = CGPathCreateMutable()
-    CGPathMoveToPoint(diamondPath, nil, -leafNode.size.width / 2, 0)
-    CGPathAddLineToPoint(diamondPath, nil, 0, leafNode.size.height / 2)
-    CGPathAddLineToPoint(diamondPath, nil, leafNode.size.width / 2, 0)
-    CGPathAddLineToPoint(diamondPath, nil, 0, -leafNode.size.height / 2)
-    CGPathAddLineToPoint(diamondPath, nil, -leafNode.size.width / 2, 0)
+  private func leafPhysicsBodyPath(leafNode: SKSpriteNode) -> CGPath {
+    let diamondPath = CGMutablePath()
+    diamondPath.move(to: CGPoint(x: -leafNode.size.width / 2, y: 0))
+    diamondPath.addLine(to: CGPoint(x: 0, y: leafNode.size.height / 2))
+    diamondPath.addLine(to: CGPoint(x: leafNode.size.width / 2, y: 0))
+    diamondPath.addLine(to: CGPoint(x: 0, y: -leafNode.size.height / 2))
+    diamondPath.addLine(to: CGPoint(x: -leafNode.size.width / 2, y: 0))
     return diamondPath
   }
   
-  override func update(currentTime: NSTimeInterval) {
+  override func update(_ currentTime: TimeInterval) {
     applySlowingImpulse()
     applyWindImpulse()
   }
@@ -128,7 +128,7 @@ class LeafSimulationScene: SKScene {
   /** Apply an upwards impulse to each leaf to slow its fall */
   private func applySlowingImpulse() {
     for node in children {
-      let slowingImpulseVector = CGVector(dx: 0, dy: slowingMagnitude(node))
+      let slowingImpulseVector = CGVector(dx: 0, dy: slowingMagnitude(leafNode: node))
       node.physicsBody?.applyImpulse(slowingImpulseVector)
     }
   }
@@ -153,14 +153,14 @@ class LeafSimulationScene: SKScene {
   
   /** Apply a wind impulse roughly a third of the time */
   private func shouldApplyWindImpulse() -> Bool {
-    return randomInt(100) < 33
+    return randomInt(n: 100) < 33
   }
   
   private func randomWindDirection() -> WindDirection {
     if coinTossIsHeads() {
-      return .Easterly
+      return .easterly
     } else {
-      return .Westerly
+      return .westerly
     }
   }
 

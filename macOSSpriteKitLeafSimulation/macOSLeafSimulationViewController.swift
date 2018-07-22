@@ -1,15 +1,15 @@
 //
-//  tvOSLeafSimulationViewController.swift
-//  tvOSSpriteKitLeafSimulation
+//  macOSLeafSimulationViewController.swift
+//  macOSSpriteKitLeafSimulation
 //
-//  Created by Jeffrey Morgan on 10/03/2016.
-//  Copyright © 2018 Jeffrey Morgan under the MIT License.
+//  Created by Jeffrey Morgan on 21/07/2018.
+//  Copyright © 2018 Jeffrey Morgan. All rights reserved.
 //
 
-import UIKit
+import Cocoa
 import SpriteKit
 
-class tvOSLeafSimulationViewController: UIViewController {
+class macOSLeafSimulationViewController: NSViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -21,7 +21,7 @@ class tvOSLeafSimulationViewController: UIViewController {
           let scene = LeafSimulationScene(fileNamed: "LeafSimulationScene") else { return }
     scene.scaleMode = .aspectFill
     scene.size = skView.bounds.size
-    
+
     skView.ignoresSiblingOrder = true
     skView.showsFPS = true
     skView.showsNodeCount = true
