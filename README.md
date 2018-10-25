@@ -4,4 +4,4 @@ This Xcode project provides a Swift implementation of a leaf simulation using [S
 
 Watch the [SpriteKit Leaf Simulation](https://www.youtube.com/watch?v=NS8s_OQMLFI) video on YouTube.
 
-<img src="http://usabilityetc.com/assets/software/spritekit-leaf-simulation.png" alt="SpriteKit Leaf Simulation" width="100%">
+<img src="http://usabilityetc.github.io/spritekit-leaf-simulation/spritekit-leaf-simulation.png" alt="SpriteKit Leaf Simulation" width="100%">
